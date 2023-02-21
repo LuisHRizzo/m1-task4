@@ -27,36 +27,6 @@ h1{
 
 }
 
-nav{
-    background-color: rgba(210, 235, 235, 0.5);
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    /* border: 1px solid black; */
-}
-
-.nav-bar{
-    text-decoration: none;
-    margin: 0 5px;
-    background-color: blue;
-    color: white;
-    font-size: 20px;
-    padding: 7px;
-    border-radius: 10px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    position: sticky;
-
-
-}   
-.nav-bar:hover{
-    background-color: tomato;
-}
-.nav-bar:active{
-    background-color: green;
-
-}
-
 .banner{
     z-index: -1;
     width: 100%;
@@ -217,4 +187,14 @@ ol p{
     text-transform: uppercase;
     background-color: black;
 
+ }
+
+ @media screen and (max-width: 768px){
+  .col1{
+    display: inline-block;
+    width: 100%;
+  }  
+  .col2{
+    width: 100%;
+  }
  }
