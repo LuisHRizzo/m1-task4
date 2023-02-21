@@ -14,20 +14,25 @@ main{
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: transparent;
-
     text-transform: uppercase;
+    position: relative;
     font-size: 50px;
-    display: inline-block;
-    position: absolute;
     color: rgb(241, 227, 26);
     -webkit-text-stroke: 1px brown;
-    top: 80px;
-    left: 15%;
+    top: 180px;
     z-index: 2;
+    text-align: center;
 
 }
+.carousel-inner{
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
 
-.banner{
+/* .banner{
     z-index: -1;
     width: 100%;
     height: 400px;
@@ -58,7 +63,7 @@ h1{
         opacity: 0.1;
     }
 
-}
+} */
 
 .titulo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
