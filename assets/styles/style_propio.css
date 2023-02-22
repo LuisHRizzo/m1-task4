@@ -32,39 +32,6 @@ h1{
     
 }
 
-/* .banner{
-    z-index: -1;
-    width: 100%;
-    height: 400px;
-    display: inline-block;
-    animation: banner 6s infinite;
-    align-items: center;
-    margin: 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    
-}
-
-@keyframes banner{
-    0%, 40%{        
-        background-image: url(../img/design1_image1.jpg);
-        opacity: 1; 
-    }
-    41%, 49%{
-        opacity: 0.1;
-    }
-    50%, 90%{
-        background-image: url(../img/design1_image2.jpg);
-        opacity: 1; 
-    }
-    91%, 100%{
-        opacity: 0.1;
-    }
-
-} */
-
 .titulo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
@@ -81,8 +48,10 @@ h1{
 
 }
 
+
+
 .col1{
-    width: 25%;
+    /* width: 25%; */
     height: 300px;
     /* border: 1px solid black; */
     display: inline-block;
@@ -112,34 +81,31 @@ h1{
 
 
 .col2{
-    width: 75%;
-    /* border: 1px solid black; */
     display: inline-block;
     text-align: start;
     padding: 20px;
-    font-size: large;
+    font-size: small;
 }
 .col2 span{
-    font-size: large;
     font-weight: bold;   
 }
 .col2 p{
-    font-size: large;
     margin: 0 0 20px 20px; 
 }
 
- .row {
-   display: flex;
-   width: 100%;
- }
-.table-schedule-september{
-    display: flex;
-    justify-content: center;
+iframe{
+    margin: 5px;
 }
 
  table{
-    padding: 15px;
+    padding: 0;
     border-spacing: 1em;
+    font-size: smaller;
+    margin: 0 auto;
+
+ }
+ .table td{
+    text-align: center;
  }
 .table-head th{
     padding: 25px;
@@ -181,6 +147,11 @@ ol p{
     margin-left: 40px;
 }
 
+.col3 h3{
+    text-align: center;
+    margin: 15px;
+}
+
  footer{
     display: flex;
     justify-content: center;
@@ -194,12 +165,12 @@ ol p{
 
  }
 
- @media screen and (max-width: 768px){
-  .col1{
-    display: inline-block;
-    width: 100%;
-  }  
-  .col2{
-    width: 100%;
-  }
- }
+@media screen and (min-width: 412px) {
+    table{
+        font-size: large;
+    }
+    .col2{
+        font-size: large;
+    }
+
+}
