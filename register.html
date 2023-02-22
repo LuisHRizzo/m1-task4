@@ -2,60 +2,287 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to MDHL</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/style_propio.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/style_propio.css">
 </head>
 
 <body>
 
-<header>
+  <header>
     <ul class="nav nav-pills justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./schedule.html">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./rules.html">Rules</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./schedule.html">Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./rules.html">Rules</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </li>
 
-      </ul>
+    </ul>
     <div class="container-flex">
-          <div id="banner" class="carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
-            <div class="col 12">
-                <h1>Mighty Ducks Hockey League</h1>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/design1_image1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/design1_image2.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
+      <div id="banner" class="carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
+        <div class="col 12">
+          <h1>Mighty Ducks Hockey League</h1>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/design1_image1.jpg" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item">
+            <img src="./assets/img/design1_image2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
     </div>
     <!-- <div class="banner">
     </div> -->
     <div class="titulo">
-        <h2>Register</h2>
+      <h2>Registration Form</h2>
     </div>
-</header>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-2 col1">
+          <div class="logo">
+          </div>
+        </div>
+        <div class="col-12 col-md-10 formulario">
+          <form action="./assets/show_data.html" method="get" id="survey-form" class="formu-inscripcion">
+            <div class="row ">
+              <div class="form-group col">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control"
+                placeholder="Enter your name" required>
+              </div>
+              <div class="form-group col">
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" id="lastname" class="form-control"
+                    placeholder="Enter your last name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address" id="name-label">Street Address</label>
+              <input type="text" name="address" id="address" class="form-control" placeholder="Enter your address"
+                required>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="city" id="name-label">City</label>
+                  <input type="text" name="city" id="city" class="form-control" placeholder="Enter your City" required>
+                </div>
+                <div class="form-group">
+                  <label for="birthdate" id="name-label">Birth Date (DD/MM/YYYY)</label>
+                  <input type="date" name="birthdate" id="birthdate" class="form-control"
+                    placeholder="Enter your Birth date" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="zipCode" id="name-label">Zip Code</label>
+                  <input type="text" name="zipCode" id="zipCode" class="form-control" placeholder="Enter your Zip Code"
+                    required>
+                </div>
+                <div class="form-group" style="display: inline-block;">
+                  <br>
+                  <label for="">Gender:
+                    <input type="radio" name="gender" value="male" class="input-radio">Male
+                  </label>
+                  <label for="">
+                    <input type="radio" name="gender" value="female" class="input-radio" checked>Female
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group" style="display: inline-block;">
+                <br>
+                <label for="">Grade:
+                  <input type="radio" name="grade" value="preschool" class="input-radio" checked>Pre-School
+                </label>
+                <label for="">
+                  <input type="radio" name="grade" value="1st" class="input-radio">1st
+                </label>
+                <label for="">
+                  <input type="radio" name="grade" value="2nd" class="input-radio">2nd
+                </label>
+                <label for="">
+                  <input type="radio" name="grade" value="3rd" class="input-radio">3rd
+                </label>
+                <label for="">
+                  <input type="radio" name="grade" value="4th" class="input-radio">4th
+                </label>
+                <label for="">
+                  <input type="radio" name="grade" value="5th" class="input-radio">5th
+                </label>
+              </div>
+            </div>
+            <br>
+            <h3>
+              Wich elementary school do you live near?
+            </h3>
+            <div class="form-group">
+              <h2>Closest School: </h2>
+              <div class="row">
+                <div class="col" style="display: inline;">
+                  <label>
+                    <input type="radio" name="school" value="katzenmaier" class="input-radio">
+                    AJ Katzenmaier
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="school" value="greenbay" class="input-radio">
+                    Greenbay
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="school" value="howardayeager" class="input-radio">
+                    Howard A Yeager
+                  </label>
+                </div>
+                <div class="col">
+                  <label>
+                    <input type="radio" name="school" value="mphart" class="input-radio">
+                    Margorie P Hart
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="school" value="northE" class="input-radio">
+                    North Elementary
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="school" value="southE" class="input-radio">
+                    South Elementary
+                  </label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <h3>
+              What position do you normally play? (check all that apply)
+            </h3>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input type="checkbox" name="position" value="forward" class="input-checkbox">
+                  Forward
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="position" value="defense" class="input-checkbox">
+                  Defense
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="checkbox" name="position" value="midfield" class="input-checkbox">
+                  Midfield
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="position" value="goalkeeper" class="input-checkbox">
+                  Goalkeeper
+                </label>
+              </div>
+            </div>
+            <br>
+            <h3>
+              Uniform Size
+            </h3>
+            <div class="row">
+              <div class="col" style="display: inline;">
+                <label>
+                  <input type="radio" name="uniform" value="ySmall" class="input-radio">
+                  Youth Small
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="uniform" value="yMedium" class="input-radio">
+                  Youth Medium
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="uniform" value="yLarge" class="input-radio">
+                  Youth Large
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="uniform" value="small" class="input-radio">
+                  Small
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="uniform" value="medium" class="input-radio">
+                  Medium
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="uniform" value="large" class="input-radio">
+                  Large
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="uniform" value="xLarge" class="input-radio">
+                  Extra Large
+                </label>
+              </div>
+            </div>
+            <br>
+            <h3>
+              Permission to Play
+            </h3>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+              rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+              associated with hockey and in consideration for the "League" accepting the registrant for its hockey
+              programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and
+              associated personnel and volunteers, including the facilities used for practices and games, against any
+              claim by or on behalf of the registrant as a result of the registrant's participation in the
+              programand/orbeing transported to or from MDHL sponsored activities, which transportation</p>
+            <p>By signing below, I herebyagree and authorizethe above. In addition, by signing below, lalso acknowledge
+              that I have read the cancellation policy and agree to its terms.</p>
+
+
+            <div class="form-group">
+              <div class="row">
+                <label for="signature">Parent/guardian Signature: <input type="text" name="signature" required></label>
+                <label for="thisdate"> Date: <input type="date" name="thisdate"></label>
+                <br>
+                <label for="agree"> <input type="checkbox" name="agree" required> By entering your name, you are hereby
+                  authorizing the form</label>
+              </div>
+              <br>
+              <div class="form-group">
+                <button type="reset" id="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </html>

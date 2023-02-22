@@ -152,6 +152,21 @@ ol p{
     margin: 15px;
 }
 
+.formulario{
+
+    padding: 1em;
+}
+
+.formu-inscripcion{
+    min-width: 410px;
+    max-width: 60vw;
+    padding: 15px;    
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: 0 auto;
+
+}
+
  footer{
     display: flex;
     justify-content: center;
@@ -174,3 +189,5 @@ ol p{
     }
 
 }
+
+
